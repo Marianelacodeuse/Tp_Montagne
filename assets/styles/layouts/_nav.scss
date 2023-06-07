@@ -1,0 +1,14 @@
+nav {
+    // width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.275);
+    padding: 25px 0;
+    width: 60%;
+
+    ul {
+        text-transform: capitalize;
+        display: flex;
+    }
+}

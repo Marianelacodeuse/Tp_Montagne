@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(/assets/images/bg.jpg) fixed center/cover;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+}
+
+p {
+  font-family: "Merriweather", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  min-height: 300px;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+header div div {
+  width: 40%;
+  padding: 100px 20px 0;
+}
+header div p {
+  text-align: center;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 400;
+  font-style: italic;
+}
+header div button {
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 300%;
+  width: 15px;
+  height: 15px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header div button i {
+  font-size: 1rem;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.275);
+  padding: 25px 0;
+  width: 60%;
+}
+nav ul {
+  text-transform: capitalize;
+  display: flex;
+}/*# sourceMappingURL=index.css.map */

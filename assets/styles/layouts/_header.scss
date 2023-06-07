@@ -1,0 +1,44 @@
+header {
+    min-height: 300px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+
+        div {
+            width: 40%;
+            padding: 100px 20px 0;
+        }
+
+        p {
+            text-align: center;
+            padding-bottom: 40px;
+            color: $color1;
+            font-size: 0.6rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        button {
+            outline: none;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 300%;
+            width: 15px;
+            height: 15px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            i {
+                font-size: 1rem;
+                color: $color1;
+            }
+        }
+    }
+}
