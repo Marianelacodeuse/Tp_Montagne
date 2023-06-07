@@ -74,13 +74,25 @@ header div button i {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.275);
-  padding: 25px 0;
-  width: 60%;
+  padding: 20px 0;
+  max-width: 80%;
+  margin: 0 auto;
 }
-nav ul {
-  text-transform: capitalize;
+nav .text {
+  background: green;
+  width: 50%;
   display: flex;
+  justify-content: space-around;
+}
+nav .text li {
+  text-transform: uppercase;
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.6rem;
+}
+nav .icons {
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=index.css.map */

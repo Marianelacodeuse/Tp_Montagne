@@ -1,14 +1,27 @@
 nav {
-    // width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.275);
-    padding: 25px 0;
-    width: 60%;
+    padding: 20px 0;
+    max-width: 80%;
+    margin: 0 auto;
+        
+    .text {
+          background: green;
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
 
-    ul {
-        text-transform: capitalize;
+          li {
+            text-transform: uppercase;
+            font-family: $font2;
+            font-size: 0.6rem;
+          }
+        }
+
+    .icons {
         display: flex;
-    }
+        justify-content: space-around;
+    }   
 }
