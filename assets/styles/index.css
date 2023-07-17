@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -16,8 +17,16 @@ h1 {
   letter-spacing: 3px;
   text-align: center;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 p {
@@ -32,6 +41,11 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  font-family: "Merriweather", sans-serif;
+  text-align: center;
+}
+
 header {
   min-height: 300px;
 }
@@ -43,14 +57,14 @@ header div {
   margin: 50px;
 }
 header div div {
-  width: 40%;
+  width: 35%;
   padding: 100px 20px 0;
 }
 header div p {
   text-align: center;
   padding-bottom: 40px;
   color: white;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -77,22 +91,299 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.275);
-  padding: 20px 0;
   max-width: 80%;
   margin: 0 auto;
 }
 nav .text {
-  background: green;
-  width: 50%;
+  width: 45%;
   display: flex;
-  justify-content: space-around;
+  transition: all 0.3s ease;
+}
+nav .text:hover li:not(:hover) {
+  background: none;
+  color: white;
 }
 nav .text li {
   text-transform: uppercase;
   font-family: "Merriweather", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 20px 12.3px;
+  color: white;
+  cursor: pointer;
+  background-color: initial;
+  transition: all 0.3s ease;
+}
+nav .text li:first-child {
+  background: white;
+  color: rgb(34, 34, 34);
+}
+nav .text li:hover {
+  background: white;
+  color: rgb(34, 34, 34);
 }
 nav .icons {
+  width: 20%;
   display: flex;
   justify-content: space-around;
+}
+nav .icons li {
+  color: white;
+}
+
+.main-section {
+  background: white;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.main-section .section-container {
+  padding: 40px;
+}
+.main-section .section-container .first-part h4 {
+  position: relative;
+}
+.main-section .section-container .first-part h4::before {
+  content: "";
+  height: 1px;
+  width: 30%;
+  background: rgba(128, 128, 128, 0.293);
+  position: absolute;
+  transform: translateX(-120%) translateY(10px);
+}
+.main-section .section-container .first-part h4::after {
+  content: "";
+  height: 1px;
+  width: 30%;
+  background: rgba(128, 128, 128, 0.293);
+  position: absolute;
+  transform: translateX(20%) translateY(10px);
+}
+.main-section .section-container .first-part h2 {
+  width: 35%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.main-section .section-container .first-part p {
+  text-align: center;
+  padding-bottom: 40px;
+  color: rgb(34, 34, 34);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
+  width: 45%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+.main-section .section-container .first-part .first-img {
+  text-align: center;
+}
+.main-section .section-container .first-part .first-img img {
+  width: 80%;
+}
+.main-section .section-container .first-part button {
+  outline: none;
+  padding: 8px 35px;
+  text-transform: uppercase;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 800;
+  font-size: 0.5rem;
+  display: block;
+  margin: 50px auto 70px;
+  background: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.main-section .section-container .second-part {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 60px 0 0;
+}
+.main-section .section-container .second-part::before {
+  content: "";
+  width: 56%;
+  height: 1px;
+  background: rgba(128, 128, 128, 0.293);
+  position: absolute;
+  transform: rotate(90deg) translateX(295px) translateY(-227px);
+}
+.main-section .section-container .second-part h4 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(75, 75, 75);
+  padding-bottom: 30px;
+}
+.main-section .section-container .second-part h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.main-section .section-container .second-part p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 20px;
+}
+.main-section .section-container .second-part button {
+  outline: none;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 0.5rem;
+  display: block;
+  margin: 25px auto;
+  background: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.main-section .section-container .second-part .left-part h3 {
+  width: 27%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.main-section .section-container .second-part .left-part .second-img {
+  text-align: center;
+}
+.main-section .section-container .second-part .left-part .second-img img {
+  width: 80%;
+  padding-bottom: 35px;
+}
+.main-section .section-container .second-part .right-part h3 {
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.main-section .section-container .second-part .right-part .third-img {
+  text-align: center;
+  padding-bottom: 35px;
+}
+.main-section .section-container .second-part .right-part img {
+  width: 80%;
+}
+.main-section::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: rgba(128, 128, 128, 0.293);
+  bottom: 680px;
+}
+
+.formulaire {
+  background: rgb(243, 241, 241);
+  max-width: 80%;
+  margin: 25px auto 50px;
+  position: relative;
+}
+.formulaire .form-container {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.formulaire .form-container .first-form {
+  padding: 40px 0;
+}
+.formulaire .form-container .first-form .information {
+  min-width: 400px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 50px;
+}
+.formulaire .form-container .first-form .information label {
+  font-size: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: rgb(98, 98, 98);
+  letter-spacing: 1px;
+}
+.formulaire .form-container .first-form .information input[type=text],
+.formulaire .form-container .first-form .information textarea {
+  width: 100%;
+  margin: 10px 0 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: transparent;
+  transition: 0.2s;
+}
+.formulaire .form-container .first-form .information input[type=text]:focus,
+.formulaire .form-container .first-form .information textarea:focus {
+  border: 1px solid skyblue;
+}
+.formulaire .form-container .first-form .information input {
+  padding: 8px 10px;
+}
+.formulaire .form-container .first-form .information textarea {
+  height: 150px;
+  resize: none;
+}
+.formulaire .form-container .first-form input[type=submit] {
+  outline: none;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 0.5rem;
+  margin: 0 50px;
+  background: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 1px solid rgb(144, 144, 144);
+}
+.formulaire .form-container .second-form {
+  width: 80%;
+  margin: 0 50px;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.formulaire .form-container .second-form div {
+  display: flex;
+  width: 80%;
+}
+.formulaire .form-container .second-form div .informations h3 {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: rgb(98, 98, 98);
+  letter-spacing: 1px;
+  margin: auto 0;
+  text-align: center;
+}
+.formulaire .form-container .second-form div .info-container {
+  margin: auto 0;
+  text-align: center;
+}
+.formulaire .form-container .second-form div .info-container h4 {
+  font-size: 0.5rem;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 800;
+  color: rgb(152, 152, 152);
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.formulaire .form-container .second-form div .info-container ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.formulaire .form-container .second-form div .info-container ul li {
+  font-size: 12px;
+  border-radius: 300%;
+  width: 8px;
+  height: 8px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

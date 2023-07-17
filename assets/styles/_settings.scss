@@ -4,11 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 $font1: "Inter", sans-serif;
 $font2: "Merriweather", sans-serif;
 $color1: white;
+$color2: rgb(34, 34, 34);
+$color3: rgb(243 241 241);
 
 body {
     background: url(/assets/images/bg.jpg) fixed center/cover;
@@ -21,8 +24,16 @@ h1 {
     letter-spacing: 3px;
     text-align: center;
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $color1;
+}
+
+h2 {
+    font-family: $font1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 2rem;
 }
 p {
     font-family: $font2;
@@ -34,4 +45,9 @@ li {
 
 a {
     text-decoration: none;
+}
+
+h4 {
+    font-family: $font2;
+    text-align: center;
 }

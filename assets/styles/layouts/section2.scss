@@ -1,0 +1,124 @@
+.formulaire {
+    background: $color3;
+    max-width: 80%;
+    margin: 25px auto 50px;
+    position: relative;
+
+    .form-container {
+        padding: 0 40px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .first-form {
+            padding: 40px 0;
+            .information {
+                min-width: 400px;
+                width: 80%;
+                max-width: 600px;
+                margin: 0 50px;
+
+                label {
+                    font-size: 0.5rem;
+                    font-family: $font1;
+                    font-weight: 800;
+                    color: rgb(98, 98, 98);
+                    letter-spacing: 1px;
+                }
+
+                input[type="text"],
+                textarea {
+                    width: 100%;
+                    margin: 10px 0 20px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                    background: transparent;
+                    transition: 0.2s;
+
+                    &:focus {
+                        border: 1px solid skyblue;
+                    }
+                }
+
+                input {
+                    padding: 8px 10px;
+                }
+
+                textarea {
+                    height: 150px;
+                    resize: none;
+                }
+            }
+
+            input[type=submit]{
+                outline: none;
+                padding: 10px 35px;
+                text-transform: uppercase;
+                font-family: $font1;
+                font-weight: 800;
+                font-size: 0.5rem;
+                margin: 0 50px;
+                background: transparent;
+                letter-spacing: 1px;
+                cursor: pointer;
+                border: 1px solid rgb(144, 144, 144);
+            }
+        }
+
+        .second-form {
+            width: 80%;
+            margin: 0 50px;
+            display: grid;
+            grid-template-rows: 25% 25% 25% 25%;
+
+            div {
+                display: flex;
+                width: 80%;
+
+                .informations {
+                    h3 {
+                        text-transform: uppercase;
+                        font-size: 0.5rem;
+                        font-family: $font1;
+                        font-weight: 800;
+                        color: rgb(98, 98, 98);
+                        letter-spacing: 1px;
+                        margin: auto 0;
+                        text-align: center;
+                    }
+                }
+
+                .info-container {
+                    margin: auto 0;
+                    text-align: center;
+                    h4 {
+                        font-size: 0.5rem;
+                        font-family: $font2;
+                        font-weight: 800;
+                        color: rgb(152, 152, 152);
+                        letter-spacing: 1px;
+                        text-align: justify;
+                    }
+
+                    ul {
+                        display: flex;
+                        width: 80%;
+                        justify-content: space-between;
+
+                        li {
+                            font-size: 12px;
+                            border-radius: 300%;
+                            width: 8px;
+                            height: 8px;
+                            padding: 15px;
+                            border: 1px solid #ccc;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

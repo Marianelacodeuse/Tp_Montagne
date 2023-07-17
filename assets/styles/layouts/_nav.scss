@@ -3,25 +3,51 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.275);
-    padding: 20px 0;
+    // padding: 20px 0;
     max-width: 80%;
     margin: 0 auto;
         
     .text {
-          background: green;
-          width: 50%;
+          width: 45%;
           display: flex;
-          justify-content: space-around;
+          // justify-content: space-around;
+          transition: all 0.3s ease;
+
+          &:hover li:not(:hover) {
+            background: none;
+            color: $color1;
+          }
 
           li {
             text-transform: uppercase;
             font-family: $font2;
-            font-size: 0.6rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 20px 12.3px;
+            color: $color1;
+            cursor: pointer;
+            background-color: initial;
+            transition: all 0.3s ease;
+
+            &:first-child {
+              background: $color1;
+              color: $color2;
+            }
+
+            &:hover {
+              background: $color1;
+              color: $color2;
+            }
           }
         }
 
     .icons {
+        width: 20%;
         display: flex;
         justify-content: space-around;
+
+        li {
+          color: white;
+        }
     }   
 }
